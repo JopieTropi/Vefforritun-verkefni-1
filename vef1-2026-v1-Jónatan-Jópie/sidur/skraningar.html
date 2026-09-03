@@ -30,9 +30,62 @@
         </header>
         <form>
             <fieldset>
+                <legend>Ferð</legend>
                 <div>
-                    Ferðir:
-
+                    <label for="ferð">Hvaða Ferð viljið þið skrá ykkur á?</label>
+                    <select id="ferð" name="ferð">
+                        <option value="Jöklaklifur">Jöklaklifur</option>
+                        <option value="Róleg gögnuferð á Suðurlandi">Róleg gögnuferð á Suðurlandi</option>
+                        <option value="Gullnihringurinn">Gullnihringurinn</option>
+                        <option value="Silfurkassinn">Silfurkassinn</option>
+                        <option value="Bronsþríhyrningurinn">Bronsþríhyrningurinn</option>
+                        <option value="Köfunarferð">Köfunarferð</option>
+                        <option value="Norðurljósaferð">Norðurljósaferð</option>
+                        <option value="Reykjavíkurrölt">Reykjavíkurrölt</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hópur</legend>
+                <div>
+                    <label for="fjöldi">Fjöldi í hóp</label>
+                    <input type="number" id="fjöldi" name="fjöldi" min=1 required>
+                </div>
+                <div>
+                    <label for="upplýsingar">Upplýsingar um hóp</label>
+                    <input type="text" id="upplýsingar" name="upplýsingar" required>
+                    <label>Hver er reynsla hópsins?</label>
+                </div>
+                <div>
+                    <label for="netfang">Netfang tengiliðar</label>
+                    <input type="email" id="netfang"  placeholder="Example@dæmi.is" required>
+                </div>
+                <div>
+                    <label for="sími">Símanúmer</label>
+                    <input type="text" id="sími"  placeholder="000-0000">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dagsetning og tími</legend>
+                <div>
+                    <label for="dagsetning">Hvenær viljið þið koma</label>
+                    <input type="date" id="dagsetning">
+                    <label for="tími">Hvaða tíma?</label>
+                    <select id="tími" name="ferð" required>
+                        <option value="Fyrir hádegi">Fyrir hádegi</option>
+                        <option value="Eftir hádegi">Eftir hádegi</option>
+                        <option value="Kvöld">Kvöld</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Bóka</legend>
+                <div>           	
+                    <label for="skilmálar"><a href="um.html"  target="_blank">Samþykkja skilmála</a></label>
+                    <input name="skilmálar" type="checkbox">
+                </div>
+                <div>
+                    <button>Panta og greiða</button>
                 </div>
             </fieldset>
         </form>
